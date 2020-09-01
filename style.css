@@ -1,10 +1,14 @@
 <<<<<<< HEAD
 *{
+<<<<<<< HEAD
     list-style: none;
+=======
+>>>>>>> 28a66994e29983e8af59151ce12a5a920cf316a6
     margin: 0;
     padding: 0;
 }
 
+<<<<<<< HEAD
 /* .main{
     position: relative;
 } */
@@ -17,18 +21,35 @@
     background-image: url("./images/rikukun_main_image.jpg");
     background-size: cover;
 }
+=======
+
+.main_picture{
+    height: 789px;
+>>>>>>> 28a66994e29983e8af59151ce12a5a920cf316a6
 }
 
 .image{
     width: 300px;
     height: 300px;
+<<<<<<< HEAD
     
+=======
+}
+>>>>>>> 28a66994e29983e8af59151ce12a5a920cf316a6
 
 .text_for_image{
     width: 300px;
     height: 300px;
 }
 =======
+.ul{
+    list-style: none;
+}
+
+header{
+    background-color:#000000;
+}
+
 .btn{
     display: inline-block;
     height:26px;
@@ -39,7 +60,7 @@
     padding: 30px 40px;
     border-radius: 20px;
     border: solid 2px #000000;
-    font-size:17px;
+    font-size:23px;
     transition: 1.0s ;
     background: #333333;
     color: #fff;
@@ -55,8 +76,8 @@
 
   #fa-birthday-cake{
       /* object-fit...画像のザイズを元のサイズで固定的に表示できる */
-      /* object-fit: contain; */
-      margin-right:60px;
+      object-fit: contain;
+      margin-right:380px;
       margin-left:15px;
       margin-top: 7px;
   }
