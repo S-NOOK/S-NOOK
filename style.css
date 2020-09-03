@@ -8,25 +8,26 @@
 
 body{
     width: 1382px;
+    background-image: url("./images/haikeigazou.jpg");
+    background-size: cover;
 }
 
 
-.main{
-    padding: 0 200px
-}
+
 
 .main_picture{
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 789px;
+    width: 1382px;
     background-image: url("./images/rikukun_main_image.jpg");
     background-size: cover;
 }
 
-.message_content{
+.message_content, #memory{
     border-bottom: 1px solid #000;
-    padding: 70px;
+    padding: 0 200px 70px 200px;
 }
 
 .message_title{
@@ -43,6 +44,7 @@ body{
 .text_for_image{
     width: 300px;
     height: 300px;
+    margin: 0 46px;
 }
 
 .ul{
@@ -113,12 +115,12 @@ img{
     height: 300px;
 }
 
-/* img {
+article > img {
     width: 100%;
     height: auto;
     max-width: 100%;
     vertical-align: bottom;
-} */
+}
 
 .flex {
     display: flex;
@@ -131,12 +133,12 @@ img{
     margin-bottom: 300px;
 }
 
-/* .carousel-wrap {
+.carousel-wrap {
     position: relative;
     padding: 70px 0 40px;
     top: -50px;
     height: 300px;
-} */
+}
 
 .carousel-item {
     height: 100%;
@@ -159,7 +161,7 @@ img{
     letter-spacing: 0.1em;
 }
 
-/* .btn {
+.btn-2 {
     border: 1px solid #555;
     width: 40px;
     height: 40px;
@@ -168,17 +170,17 @@ img{
     top: 0;
     transition: 0.3s;
     cursor: pointer;
-} */
+}
 
-#prev.btn {
+#prev.btn-2 {
     right: calc(23%);
 }
 
-#next.btn {
+#next.btn-2 {
     right: calc(23% - 70px);
 }
 
-/* .btn::before {
+.btn-2::before {
     content: "";
     width: 13px;
     height: 13px;
@@ -188,29 +190,30 @@ img{
     top: 13px;
     left: 13px;
     transition: 0.3s;
-} */
+}
 
-#next.btn::before {
+#next.btn-2::before {
     transform: rotate(45deg);
 }
 
-#prev.btn::before {
+#prev.btn-2::before {
     transform: rotate(-135deg);
 }
 
-.btn:hover {
+.btn-2:hover {
     background: #1e90ff;
 }
 
-.btn:hover::before {
+.btn-2:hover::before {
     border-color: #fff;
 }
 
-/* #carousel {
+#carousel {
     position: absolute;
     top: 60px;
     left: 0;
-} */
+    overflow: hidden;
+}
 
 #present{
     padding-left: 200px;
@@ -222,7 +225,7 @@ img{
 
 .step1,.step2,.step3{
     width: 250px;
-    height: 250px; 
+    height: 250px;
     text-align: center;
 }
 
