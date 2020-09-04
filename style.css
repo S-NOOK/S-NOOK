@@ -63,17 +63,17 @@ header{
 
 .btn{
     display: inline-block;
-    height:26px;
-    width:100px;
+    height:22px;
+    width:50px;
     margin-right:25px;
     margin-left:25px;
     text-align: center;
-    padding: 30px 40px;
-    border-radius: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
     border: solid 2px #000000;
-    font-size:23px;
+    font-size:15px;
     transition: 1.0s ;
-    background: #FFF;
+    background: #cccccc;
     color: #333333;
     text-decoration: none;
     font-weight: bold;
@@ -82,17 +82,17 @@ header{
 
   .btn2{
     display: inline-block;
-    height:26px;
-    width:100px;
+    height:22px;
+    width:50px;
     margin-left: 15px;
     margin-right:200px;
     text-align: center;
-    padding: 30px 40px;
-    border-radius: 20px;
+    padding: 15px 20px;
+    border-radius: 15px;
     border: solid 2px #000000;
-    font-size:23px;
+    font-size:15px;
     transition: 1.0s ;
-    background: #FFF;
+    background: #cccccc;
     color: #333333;
     text-decoration: none;
     font-weight: bold;
@@ -116,13 +116,13 @@ header{
       margin-left:20px;
       margin-top: 7px;
       transition: 1.0s ;
-      color: #FFF;
+      color: #cccccc;
   }
 
   #fa-birthday-cake2{
       margin-top: 7px;
       transition: 1.0s ;
-      color: #FFF;
+      color: #cccccc;
   }
 
   #fa-birthday-cake1:hover{
@@ -287,14 +287,31 @@ article > img {
 
 footer{
     text-align: center;
-    background-color:#fff;
-    height:639px;
+    margin-top: 200px;
+    width: 1382px;
+    background-color: #000000;
 }
 
 .footer_img{
-    margin-top: 250px;
+    ;
 }
 
-.footer_sentence{
-    margin-top:25px;
+.footer_sentence2{
+    font-weight: bold;
+    font-size: 20px;
+    color:#fff;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footer_sentence1{
+    margin-top: 100px
+    font-weight: bold;
+    font-size: 35px;
+    transition:15s;
+    color:#00000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footer_sentence1:hover{
+    color:#DEB887;
 }
