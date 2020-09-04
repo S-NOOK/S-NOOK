@@ -63,15 +63,15 @@ header{
 
 .btn{
     display: inline-block;
-    height:22px;
-    width:50px;
+    height:40px;
+    width:90px;
     margin-right:25px;
     margin-left:25px;
     text-align: center;
     padding: 15px 20px;
-    border-radius: 15px;
+    border-radius: 30px;
     border: solid 2px #000000;
-    font-size:15px;
+    font-size:20px;
     transition: 1.0s ;
     background: #cccccc;
     color: #333333;
@@ -82,15 +82,15 @@ header{
 
   .btn2{
     display: inline-block;
-    height:22px;
-    width:50px;
+    height:40px;
+    width:90px;
     margin-left: 15px;
-    margin-right:200px;
+    margin-right:310px;
     text-align: center;
     padding: 15px 20px;
-    border-radius: 15px;
+    border-radius: 30px;
     border: solid 2px #000000;
-    font-size:15px;
+    font-size:20px;
     transition: 1.0s ;
     background: #cccccc;
     color: #333333;
@@ -112,7 +112,7 @@ header{
   #fa-birthday-cake1{
       /* object-fit...画像のザイズを元のサイズで固定的に表示できる */
       object-fit: contain;
-      margin-right:200px;
+      margin-right:280px;
       margin-left:20px;
       margin-top: 7px;
       transition: 1.0s ;
@@ -172,6 +172,11 @@ article > img {
     height: auto;
     max-width: 100%;
     vertical-align: bottom;
+}
+
+.catch_text{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .flex {
@@ -279,6 +284,7 @@ article > img {
     width: 250px;
     height: 250px;
     text-align: center;
+    font-weight: bold;
 }
 
 .step3{
