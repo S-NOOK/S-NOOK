@@ -53,6 +53,12 @@ body{
 
 header{
     background-color:#000000;
+    position: fixed;
+    width: 1382px;
+    /* 半透明にする*/
+    filter:alpha(opacity=65);
+    -moz-opacity: 0.65;
+    opacity: 0.65;
 }
 
 .btn{
@@ -67,8 +73,27 @@ header{
     border: solid 2px #000000;
     font-size:23px;
     transition: 1.0s ;
-    background: #333333;
-    color: #fff;
+    background: #FFF;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .btn2{
+    display: inline-block;
+    height:26px;
+    width:100px;
+    margin-left: 15px;
+    margin-right:200px;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 20px;
+    border: solid 2px #000000;
+    font-size:23px;
+    transition: 1.0s ;
+    background: #FFF;
+    color: #333333;
     text-decoration: none;
     font-weight: bold;
     font-family: Helvetica, Arial, sans-serif;
@@ -76,16 +101,43 @@ header{
 
   .btn:hover{
     color: #333;
-    background: #E56832;
+    background: #DEB887;
   }
 
-  #fa-birthday-cake{
+  .btn2:hover{
+    color: #333;
+    background: #DEB887;
+  }
+
+  #fa-birthday-cake1{
       /* object-fit...画像のザイズを元のサイズで固定的に表示できる */
       object-fit: contain;
-      margin-right:380px;
-      margin-left:15px;
+      margin-right:200px;
+      margin-left:20px;
       margin-top: 7px;
+      transition: 1.0s ;
+      color: #FFF;
   }
+
+  #fa-birthday-cake2{
+      margin-top: 7px;
+      transition: 1.0s ;
+      color: #FFF;
+  }
+
+  #fa-birthday-cake1:hover{
+	 /* 透明度を上げることで、画像の色を薄く見せる。*/
+	 color: #DEB887;
+     /* リンクをホバーしたときのカーソルにする。*/
+	 cursor: pointer;
+}
+
+#fa-birthday-cake2:hover{
+    /* 透明度を上げることで、画像の色を薄く見せる。*/
+    color: #DEB887;
+    /* リンクをホバーしたときのカーソルにする。*/
+    cursor: pointer;
+}
 
 
   .flex_box{
