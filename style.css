@@ -284,3 +284,17 @@ article > img {
 .step3{
     margin-right: 200px;
 }
+
+footer{
+    text-align: center;
+    background-color:#fff;
+    height:639px;
+}
+
+.footer_img{
+    margin-top: 250px;
+}
+
+.footer_sentence{
+    margin-top:25px;
+}
