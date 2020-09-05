@@ -23,8 +23,13 @@ body{
     background-size: cover;
 }
 
-.message_content, #memory{
+.message_content{
     border-bottom: 1px solid #000;
+    padding: 0 100px 70px 100px;
+}
+
+.carousel-wrap{
+    border-bottom:1px solid #000;
     padding: 0 100px 70px 100px;
 }
 
