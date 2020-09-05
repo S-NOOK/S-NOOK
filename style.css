@@ -25,7 +25,7 @@ body{
 
 .message_content, #memory{
     border-bottom: 1px solid #000;
-    padding: 0 200px 70px 200px;
+    padding: 0 100px 70px 100px;
 }
 
 .message_title{
@@ -186,7 +186,7 @@ article > img {
 }
 
 #memory {
-    padding-left: 200px;
+    padding-left: 100px;
     margin-bottom: 300px;
 }
 
@@ -273,7 +273,7 @@ article > img {
 }
 
 #present{
-    padding-left: 200px;
+    padding-left: 100px;
 }
 
 #present h2{
@@ -288,13 +288,12 @@ article > img {
 }
 
 .step3{
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 footer{
     text-align: center;
     margin-top: 200px;
-    /* width: 1382px; */
     background-color: #000000;
 }
 
