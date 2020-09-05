@@ -64,6 +64,7 @@ header{
     display: inline-block;
     height:40px;
     width:90px;
+    line-height:37px;
     margin-right:25px;
     margin-left:25px;
     text-align: center;
@@ -84,6 +85,7 @@ header{
     height:40px;
     width:90px;
     margin-left: 15px;
+    line-height:37px;
     margin-right:310px;
     text-align: center;
     padding: 15px 20px;
@@ -297,10 +299,6 @@ footer{
     background-color: #000000;
 }
 
-.footer_img{
-    ;
-}
-
 .footer_sentence2{
     font-weight: bold;
     font-size: 20px;
@@ -309,11 +307,10 @@ footer{
 }
 
 .footer_sentence1{
-    margin-top: 100px
     font-weight: bold;
     font-size: 35px;
     transition:15s;
-    color:#00000;
+    color:#000000;
     font-family: Helvetica, Arial, sans-serif;
 }
 
