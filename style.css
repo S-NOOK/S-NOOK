@@ -62,17 +62,17 @@ header{
 
 .btn{
     display: inline-block;
-    height:26px;
-    width:100px;
+    height:40px;
+    width:90px;
     margin-right:25px;
     margin-left:25px;
     text-align: center;
-    padding: 30px 40px;
-    border-radius: 20px;
+    padding: 15px 20px;
+    border-radius: 30px;
     border: solid 2px #000000;
-    font-size:23px;
+    font-size:20px;
     transition: 1.0s ;
-    background: #FFF;
+    background: #cccccc;
     color: #333333;
     text-decoration: none;
     font-weight: bold;
@@ -81,17 +81,17 @@ header{
 
   .btn2{
     display: inline-block;
-    height:26px;
-    width:100px;
+    height:40px;
+    width:90px;
     margin-left: 15px;
-    margin-right:200px;
+    margin-right:310px;
     text-align: center;
-    padding: 30px 40px;
-    border-radius: 20px;
+    padding: 15px 20px;
+    border-radius: 30px;
     border: solid 2px #000000;
-    font-size:23px;
+    font-size:20px;
     transition: 1.0s ;
-    background: #FFF;
+    background: #cccccc;
     color: #333333;
     text-decoration: none;
     font-weight: bold;
@@ -111,17 +111,17 @@ header{
   #fa-birthday-cake1{
       /* object-fit...画像のザイズを元のサイズで固定的に表示できる */
       object-fit: contain;
-      margin-right:200px;
+      margin-right:280px;
       margin-left:20px;
       margin-top: 7px;
       transition: 1.0s ;
-      color: #FFF;
+      color: #cccccc;
   }
 
   #fa-birthday-cake2{
       margin-top: 7px;
       transition: 1.0s ;
-      color: #FFF;
+      color: #cccccc;
   }
 
   #fa-birthday-cake1:hover{
@@ -171,6 +171,11 @@ article > img {
     height: auto;
     max-width: 100%;
     vertical-align: bottom;
+}
+
+.catch_text{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .flex {
@@ -278,8 +283,40 @@ article > img {
     width: 250px;
     height: 250px;
     text-align: center;
+    font-weight: bold;
 }
 
 .step3{
     margin-right: 200px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 200px;
+    width: 1382px;
+    background-color: #000000;
+}
+
+.footer_img{
+    ;
+}
+
+.footer_sentence2{
+    font-weight: bold;
+    font-size: 20px;
+    color:#fff;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footer_sentence1{
+    margin-top: 100px
+    font-weight: bold;
+    font-size: 35px;
+    transition:15s;
+    color:#00000;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.footer_sentence1:hover{
+    color:#DEB887;
 }
