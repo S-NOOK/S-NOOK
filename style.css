@@ -298,10 +298,6 @@ footer{
     background-color: #000000;
 }
 
-.footer_img{
-    ;
-}
-
 .footer_sentence2{
     font-weight: bold;
     font-size: 20px;
@@ -310,11 +306,10 @@ footer{
 }
 
 .footer_sentence1{
-    margin-top: 100px
     font-weight: bold;
     font-size: 35px;
     transition:15s;
-    color:#00000;
+    color:#000000;
     font-family: Helvetica, Arial, sans-serif;
 }
 
