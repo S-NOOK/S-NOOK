@@ -7,7 +7,6 @@
 }
 
 body{
-    width: 1382px;
     background-image: url("./images/haikeigazou.jpg");
     background-size: cover;
 }
@@ -20,7 +19,6 @@ body{
     top: 0;
     left: 0; */
     height: 789px;
-    width: 1382px;
     background-image: url("./images/rikukun_main_image.jpg");
     background-size: cover;
 }
@@ -296,7 +294,7 @@ article > img {
 footer{
     text-align: center;
     margin-top: 200px;
-    width: 1382px;
+    /* width: 1382px; */
     background-color: #000000;
 }
 
