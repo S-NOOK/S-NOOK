@@ -52,6 +52,10 @@ body{
     margin: 0 46px;
 }
 
+.text_for_image2{
+    display: none;
+}
+
 .ul{
     list-style: none;
 }
@@ -135,6 +139,10 @@ header{
       margin-top: 7px;
       transition: 1.0s ;
       color: #cccccc;
+  }
+
+  #fa-birthday-cake3{
+      display: none;
   }
 
   #fa-birthday-cake1:hover{
@@ -340,4 +348,225 @@ footer{
 
 .footer_sentence1:hover{
     color:#DEB887;
+}
+
+.flex_2{
+    display: none;
+}
+
+.step1_text, .step2_text, .step3_text{
+    display: none
+}
+
+
+
+
+
+
+@media (max-width: 375px)
+{
+    .main_picture{
+        /* height: 789px; */
+        width: 375px;
+        height: 215px;
+        background-image: url("./images/rikukun_main_image.jpg");
+        background-size: cover;
+    }
+
+    #fa-birthday-cake2{
+        display: none;
+    }
+
+    #fa-birthday-cake1{
+        display: none;
+    }
+
+    #fa-birthday-cake3{
+        display: block;
+        object-fit: contain;
+      /* margin-right:280px; */
+      margin-left:20px;
+      /* margin-top: 7px; */
+      transition: 1.0s ;
+      color: #cccccc;
+      line-height: 32px;
+
+    }
+
+    .nav{
+          display:none;
+      }
+
+    .fa-bars{
+          color: white;
+          margin-right: 20px;
+          line-height: 32px;
+      }
+
+      header{
+          width: 375px;
+      }
+
+      .message_content{
+          padding: 0 30px 0 30px;
+      }
+
+      .message_content > .message_title{
+          padding: 20px 0 10px 0;
+          margin: 0;
+      }
+
+      h2 {
+        font-size: 20px;
+    }
+
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+
+    #image{
+        margin-right: 15px;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .text_for_image2{
+        display: block;
+        margin: 0 7.5px;
+    }
+
+    .text_for_image{
+        display: none;
+    }
+
+    .catch_text{
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    #memory{
+        padding:0 30px;
+        height: 350px;
+    }
+
+    .carousel-wrap {
+        position: relative;
+        padding: 20px 0 10px 0;
+        top: -50px;
+        height: 350px;
+        overflow: hidden;
+    }
+    
+    .carousel-item {
+        /* height: ; */
+        width: 150px;
+        /* margin-right: 100px; */
+        /* box-shadow: 0 0 10px #ddd; */
+    }
+    
+    .carousel-item:nth-of-type(odd) {
+        margin-right: 15px;
+    
+      }
+    
+    .memory-content {
+        padding: 15px 10px 20px;
+        z-index: 3;
+    
+    }
+    
+    #memory h2, #present h2{
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .memory-content h3 {
+        margin-bottom: 10px;
+        letter-spacing: 0.1em;
+    }
+    
+    .btn-2 {
+        border: 1px solid #555;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    #present{
+        padding: 0 30px;
+    }
+    
+    .step1,.step2,.step3{
+        width: 100px;
+        height: 250px;
+        text-align: center;
+        /* font-weight: bold; */
+    }
+
+    .step1 > img, .step2 > img, .step3 > img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .step2{
+        margin: 0 7.5px;
+    }
+    
+    .step1_text, .step2_text, .step3_text{
+        display: block;
+    }
+    
+    .present_text{
+        display: none;
+    }
+    
+    footer{
+        text-align: center;
+        margin-top: 0px;
+        background-color: #000000;
+    }
+    
+    .footer_sentence2{
+        font-weight: bold;
+        font-size: 10px;
+        color:#fff;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .footer_sentence1{
+        font-weight: bold;
+        font-size: 10px;
+        transition:15s;
+        color:#000000;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .btn-2 {
+        border: 1px solid #555;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
 }
