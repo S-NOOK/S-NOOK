@@ -363,7 +363,7 @@ footer{
 
 
 
-@media (max-width: 375px)
+@media screen and (max-width: 375px)
 {
     .main_picture{
         /* height: 789px; */
