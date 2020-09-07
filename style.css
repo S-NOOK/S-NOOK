@@ -4,9 +4,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body{
+    z-index: 1;
     background-image: url("./images/haikeigazou.jpg");
     background-size: cover;
 }
@@ -24,17 +26,17 @@ body{
 }
 
 .message_content{
-    border-bottom: 1px solid #000;
+    /* border-bottom: 1px solid #cccccc; */
     padding: 0 100px 70px 100px;
 }
 
 #memory{
-    border-bottom:1px solid #000;
-    padding: 0 100px 160px 100px;
+    /* border-bottom:1px solid #ccc; */
+    padding: 0 100px 0 100px;
 }
 
 .message_title{
-    margin-top: 100px;
+    padding-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -55,13 +57,13 @@ body{
 }
 
 header{
+    z-index: 4;
     background-color:#000000;
     position: fixed;
-    width: 1382px;
+    /* width: 1382px; */
     /* 半透明にする*/
-    filter:alpha(opacity=65);
-    -moz-opacity: 0.65;
     opacity: 0.65;
+    width: 100%;
 }
 
 .btn{
@@ -69,8 +71,8 @@ header{
     height:40px;
     width:90px;
     line-height:37px;
-    margin-right:25px;
-    margin-left:25px;
+    /* margin-right:25px; */
+    /* margin-left:25px; */
     text-align: center;
     padding: 15px 20px;
     border-radius: 30px;
@@ -84,13 +86,17 @@ header{
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  .memory_btn{
+      margin: 0 100px;
+  }
+
   .btn2{
     display: inline-block;
     height:40px;
     width:90px;
-    margin-left: 15px;
-    line-height:37px;
-    margin-right:310px;
+    /* margin-left: 15px; */
+    /* line-height:37px; */
+    /* margin-right:310px; */
     text-align: center;
     padding: 15px 20px;
     border-radius: 30px;
@@ -117,7 +123,7 @@ header{
   #fa-birthday-cake1{
       /* object-fit...画像のザイズを元のサイズで固定的に表示できる */
       object-fit: contain;
-      margin-right:280px;
+      /* margin-right:280px; */
       margin-left:20px;
       margin-top: 7px;
       transition: 1.0s ;
@@ -125,6 +131,7 @@ header{
   }
 
   #fa-birthday-cake2{
+      margin-right: 20px;
       margin-top: 7px;
       transition: 1.0s ;
       color: #cccccc;
@@ -147,7 +154,7 @@ header{
 
   .flex_box{
       display:flex;
-      justify-content:left;
+      justify-content:space-between;
   }
 
 
@@ -191,26 +198,38 @@ article > img {
 }
 
 #memory {
+    z-index: 3;
     padding-left: 100px;
-    margin-bottom: 300px;
 }
+
+/* #memory > h2{
+    margin-top: 100px;
+    margin-bottom: 40px;
+} */
 
 .carousel-wrap {
     position: relative;
     padding: 70px 0 40px;
     top: -50px;
-    height: 300px;
+    height: 500px;
+    overflow: hidden;
 }
 
 .carousel-item {
-    height: 100%;
+    /* height: ; */
     width: 500px;
-    margin-right: 100px;
-    box-shadow: 0 0 10px #ddd;
+    /* margin-right: 100px; */
+    /* box-shadow: 0 0 10px #ddd; */
 }
+
+.carousel-item:nth-of-type(odd) {
+    margin-right: 155px;
+  }
 
 .memory-content {
     padding: 15px 10px 20px;
+    z-index: 3;
+
 }
 
 #memory h2{
@@ -263,7 +282,7 @@ article > img {
 }
 
 .btn-2:hover {
-    background: #1e90ff;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .btn-2:hover::before {
@@ -282,6 +301,7 @@ article > img {
 }
 
 #present h2{
+    padding-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -289,7 +309,7 @@ article > img {
     width: 250px;
     height: 250px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .step3{
