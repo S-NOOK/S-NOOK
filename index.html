@@ -10,14 +10,18 @@
 <body>
     <header>
         <div class="flex_box">
+            <a href="#main_picture"><i class="fas fa-birthday-cake fa-2x" id="fa-birthday-cake3"></i></a>
             <a href="#main_picture"><i class="fas fa-birthday-cake fa-4x" id="fa-birthday-cake1"></i></a>
-            <ul class="flex_box">
+            <ul class="flex_box nav">
                 <!-- headerからのページ内遷移について -->
                 <li><a class="btn" href="#message">Message</a></li>
                 <li><a class="btn memory_btn" href="#memory">Memory</a></li> 
                 <li><a class="btn" href="#present">Present</a></li>
             </ul>
-            <a href="#main_picture"><i class="fas fa-birthday-cake fa-4x" id="fa-birthday-cake2"></i></a>
+            <a class="nav" href="#main_picture"><i class="fas fa-birthday-cake fa-4x" id="fa-birthday-cake2"></i></a>
+            <div id="hamburger">
+                <span><i class="fas fa-bars fa-2x" ></i></span>
+             </div>
         </div>  
     </header>
     
@@ -28,7 +32,7 @@
         <div class="message_content" id="message">
             <h2 class="message_title">◎Message</h2>
             <div class="message_image">
-                <div class="image">
+                <div class="image" id="image">
                     <img src="./images/rikukun_message_1.jpg" alt="">
                 </div>
                 <div class="text_for_image">
@@ -38,6 +42,10 @@
                 <div class="image">
                     <img src="./images/rikukun_message_2.jpg" alt="">
                 </div>
+            </div>
+            <div class="text_for_image2">
+                <p class="catch_text">22歳、お誕生日おめでとう！！</p>
+                <p>こうやって誕生日を祝える2回目の機会がやってきたこと、この上なく嬉しく思います。せっかくなので誕生日っぽく、寝顔で挟んでみました！誕生日だけに。2日に1回はこの画像（特に右側）を見て心を安らかにしています。来年の誕生日も祝わせてほしいし、寝顔ももっと撮り溜めれたらなって思います。目指せ！寝顔100枚達成！体調悪いせいで十分に楽しんでもらえないと思ったからその分愛のかたまりみたいなWebサイト作成で許してもらおうという魂胆です！</p>
             </div>
         </div>
 
@@ -135,17 +143,20 @@
                 <li class="step1">
                     <img src="./images/rikukun_present_1.jpg" alt="画像">
                     <h3>STEP1</h3>
-                    <p>2ショットを撮影しましょう！</p>
+                    <p class="present_text">2ショットを撮影しましょう！</p>
+                    <p class="step1_text">2ショットを撮影しましょう！</p>
                 </li>
                 <li class="step2">
                     <img src="./images/rikukun_present_2.jpg" alt="画像">
                     <h3>STEP2</h3>
-                    <p>フッターに写真を組み込んで<br>ページを完成させよう！</p>
+                    <p class="present_text">フッターに写真を組み込んで<br>ページを完成させよう！</p>
+                    <p class="step2_text">フッターに写真を組み込んでページを完成させよう！</p>
                 </li>
                 <li class="step3">
                     <img src="./images/rikukun_present_3.jpg" alt="画像">
                     <h3>STEP3</h3>
-                    <p>ついにページが完成です！<br>プレゼントを受け取れるよ！</p>
+                    <p class="present_text">ついにページが完成です！<br>プレゼントを受け取れるよ！</p>
+                    <p class="step3_text">ついにページが完成です！プレゼントを受け取れるよ！</p>
                 </li>
             </ul>
         </section>
