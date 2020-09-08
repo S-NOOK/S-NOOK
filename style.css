@@ -499,6 +499,8 @@ footer{
     #memory{
         padding:0 30px;
         height: 350px;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     .carousel-wrap {
