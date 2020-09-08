@@ -223,7 +223,7 @@ article > img {
 }
 
 .carousel-item:nth-of-type(odd) {
-    margin-right: 155px;
+    margin-right: 70px;
   }
 
 .memory-content {
