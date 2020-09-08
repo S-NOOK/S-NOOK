@@ -4,9 +4,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body{
+    z-index: 1;
     background-image: url("./images/haikeigazou.jpg");
     background-size: cover;
 }
@@ -23,13 +25,18 @@ body{
     background-size: cover;
 }
 
-.message_content, #memory{
-    border-bottom: 1px solid #000;
+.message_content{
+    /* border-bottom: 1px solid #cccccc; */
     padding: 0 100px 70px 100px;
 }
 
+#memory{
+    /* border-bottom:1px solid #ccc; */
+    padding: 0 100px 0 100px;
+}
+
 .message_title{
-    margin-top: 100px;
+    padding-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -45,22 +52,22 @@ body{
     margin: 0 46px;
 }
 
+.text_for_image2{
+    display: none;
+}
+
 .ul{
     list-style: none;
 }
 
 header{
+    z-index: 4;
     background-color:#000000;
     position: fixed;
     /* width: 1382px; */
     /* 半透明にする*/
     opacity: 0.65;
-    z-index: 2;
-    width:100%;
-}
-
-.memory-button{
-    margin: 0 100px;
+    width: 100%;
 }
 
 .btn{
@@ -83,12 +90,16 @@ header{
     font-family: Helvetica, Arial, sans-serif;
   }
 
+  .memory_btn{
+      margin: 0 100px;
+  }
+
   .btn2{
     display: inline-block;
     height:40px;
     width:90px;
     /* margin-left: 15px; */
-    line-height:37px;
+    /* line-height:37px; */
     /* margin-right:310px; */
     text-align: center;
     padding: 15px 20px;
@@ -116,17 +127,22 @@ header{
   #fa-birthday-cake1{
       /* object-fit...画像のザイズを元のサイズで固定的に表示できる */
       object-fit: contain;
-      /* margin-right:280px;
-      margin-left:20px; */
+      /* margin-right:280px; */
+      margin-left:20px;
       margin-top: 7px;
       transition: 1.0s ;
       color: #cccccc;
   }
 
   #fa-birthday-cake2{
+      margin-right: 20px;
       margin-top: 7px;
       transition: 1.0s ;
       color: #cccccc;
+  }
+
+  #fa-birthday-cake3{
+      display: none;
   }
 
   #fa-birthday-cake1:hover{
@@ -146,7 +162,7 @@ header{
 
   .flex_box{
       display:flex;
-      justify-content: space-between;
+      justify-content:space-between;
   }
 
 
@@ -190,27 +206,39 @@ article > img {
 }
 
 #memory {
-    padding-left: 200px;
-    margin-bottom: 300px;
-    z-index: 1;
+    z-index: 3;
+    padding-left: 100px;
 }
+
+/* #memory > h2{
+    margin-top: 100px;
+    margin-bottom: 40px;
+} */
 
 .carousel-wrap {
     position: relative;
     padding: 70px 0 40px;
     top: -50px;
-    height: 300px;
+    height: 500px;
+    overflow: hidden;
 }
 
 .carousel-item {
-    height: 100%;
+    /* height: ; */
     width: 500px;
-    margin-right: 100px;
-    box-shadow: 0 0 10px #ddd;
+    /* margin-right: 100px; */
+    /* box-shadow: 0 0 10px #ddd; */
 }
+
+.carousel-item:nth-of-type(odd) {
+    margin-right: 155px;
+
+  }
 
 .memory-content {
     padding: 15px 10px 20px;
+    z-index: 3;
+
 }
 
 #memory h2{
@@ -263,7 +291,7 @@ article > img {
 }
 
 .btn-2:hover {
-    background: #1e90ff;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .btn-2:hover::before {
@@ -278,10 +306,11 @@ article > img {
 }
 
 #present{
-    padding-left: 200px;
+    padding-left: 100px;
 }
 
 #present h2{
+    padding-top: 70px;
     margin-bottom: 40px;
 }
 
@@ -289,17 +318,16 @@ article > img {
     width: 250px;
     height: 250px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .step3{
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 footer{
     text-align: center;
     margin-top: 200px;
-    /* width: 1382px; */
     background-color: #000000;
 }
 
@@ -320,4 +348,225 @@ footer{
 
 .footer_sentence1:hover{
     color:#DEB887;
+}
+
+.flex_2{
+    display: none;
+}
+
+.step1_text, .step2_text, .step3_text{
+    display: none
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px)
+{
+    .main_picture{
+        /* height: 789px; */
+        width: 375px;
+        height: 215px;
+        background-image: url("./images/rikukun_main_image.jpg");
+        background-size: cover;
+    }
+
+    #fa-birthday-cake2{
+        display: none;
+    }
+
+    #fa-birthday-cake1{
+        display: none;
+    }
+
+    #fa-birthday-cake3{
+        display: block;
+        object-fit: contain;
+      /* margin-right:280px; */
+      margin-left:20px;
+      /* margin-top: 7px; */
+      transition: 1.0s ;
+      color: #cccccc;
+      line-height: 32px;
+
+    }
+
+    .nav{
+          display:none;
+      }
+
+    .fa-bars{
+          color: white;
+          margin-right: 20px;
+          line-height: 32px;
+      }
+
+      header{
+          width: 375px;
+      }
+
+      .message_content{
+          padding: 0 30px 0 30px;
+      }
+
+      .message_content > .message_title{
+          padding: 20px 0 10px 0;
+          margin: 0;
+      }
+
+      h2 {
+        font-size: 20px;
+    }
+
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+
+    #image{
+        margin-right: 15px;
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .text_for_image2{
+        display: block;
+        margin: 0 7.5px;
+    }
+
+    .text_for_image{
+        display: none;
+    }
+
+    .catch_text{
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    #memory{
+        padding:0 30px;
+        height: 350px;
+    }
+
+    .carousel-wrap {
+        position: relative;
+        padding: 20px 0 10px 0;
+        top: -50px;
+        height: 350px;
+        overflow: hidden;
+    }
+    
+    .carousel-item {
+        /* height: ; */
+        width: 150px;
+        /* margin-right: 100px; */
+        /* box-shadow: 0 0 10px #ddd; */
+    }
+    
+    .carousel-item:nth-of-type(odd) {
+        margin-right: 15px;
+    
+      }
+    
+    .memory-content {
+        padding: 15px 10px 20px;
+        z-index: 3;
+    
+    }
+    
+    #memory h2, #present h2{
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .memory-content h3 {
+        margin-bottom: 10px;
+        letter-spacing: 0.1em;
+    }
+    
+    .btn-2 {
+        border: 1px solid #555;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    #present{
+        padding: 0 30px;
+    }
+    
+    .step1,.step2,.step3{
+        width: 100px;
+        height: 250px;
+        text-align: center;
+        /* font-weight: bold; */
+    }
+
+    .step1 > img, .step2 > img, .step3 > img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .step2{
+        margin: 0 7.5px;
+    }
+    
+    .step1_text, .step2_text, .step3_text{
+        display: block;
+    }
+    
+    .present_text{
+        display: none;
+    }
+    
+    footer{
+        text-align: center;
+        margin-top: 0px;
+        background-color: #000000;
+    }
+    
+    .footer_sentence2{
+        font-weight: bold;
+        font-size: 10px;
+        color:#fff;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .footer_sentence1{
+        font-weight: bold;
+        font-size: 10px;
+        transition:15s;
+        color:#000000;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+    .btn-2 {
+        border: 1px solid #555;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
 }
