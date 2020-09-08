@@ -70,6 +70,10 @@ header{
     width: 100%;
 }
 
+.nav_1{
+    display: none;
+}
+
 .btn{
     display: inline-block;
     height:40px;
@@ -391,6 +395,10 @@ footer{
       color: #cccccc;
       line-height: 32px;
 
+    }
+
+    .nav_1{
+        display: block;
     }
 
     .nav{
