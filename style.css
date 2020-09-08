@@ -631,4 +631,11 @@ footer{
         visibility: visible;
     }
 
+    .catch_text2{
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
 }
