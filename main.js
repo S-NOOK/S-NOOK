@@ -48,3 +48,7 @@ prev.click(function () {
         c--;
     }
 });
+
+$('.fa-bars').on('click', function () {
+    $('.nav').toggleClass('show');
+});

@@ -40,6 +40,10 @@ body{
     margin-bottom: 40px;
 }
 
+.navigation{
+    display: none;
+}
+
 
 .message_image{
     display: flex;
@@ -68,6 +72,10 @@ header{
     /* 半透明にする*/
     opacity: 0.65;
     width: 100%;
+}
+
+.fa-bars, .nav{
+    display: none;
 }
 
 .btn{
@@ -99,7 +107,6 @@ header{
     height:40px;
     width:90px;
     /* margin-left: 15px; */
-    /* line-height:37px; */
     /* margin-right:310px; */
     text-align: center;
     padding: 15px 20px;
@@ -231,7 +238,7 @@ article > img {
 }
 
 .carousel-item:nth-of-type(odd) {
-    margin-right: 155px;
+    margin-right: 70px;
 
   }
 
@@ -373,6 +380,10 @@ footer{
         background-size: cover;
     }
 
+    .flex_box{
+        display: none;
+    }
+
     #fa-birthday-cake2{
         display: none;
     }
@@ -385,22 +396,54 @@ footer{
         display: block;
         object-fit: contain;
       /* margin-right:280px; */
-      margin-left:20px;
+      margin-left:10px;
+      margin-top: 2px;
       /* margin-top: 7px; */
       transition: 1.0s ;
       color: #cccccc;
       line-height: 32px;
-
+      float: left;
     }
 
-    .nav{
-          display:none;
+    .btn{
+        display: inline-block;
+        height:20px;
+        width:45px;
+        line-height:20px;
+        /* margin-right:25px; */
+        /* margin-left:25px; */
+        text-align: center;
+        padding: 7px 10px;
+        border-radius: 30px;
+        border: solid 2px #000000;
+        font-size:10px;
+        transition: 1.0s ;
+        background: #cccccc;
+        color: #333333;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Helvetica, Arial, sans-serif;
       }
+    
+      /* .memory_btn{
+          margin: 0 20px;
+      } */
+
+    .navigation{
+        float:right;
+    }
+
+    .navigation{
+        display: block;
+    }
 
     .fa-bars{
           color: white;
-          margin-right: 20px;
-          line-height: 32px;
+          margin: 10px
+        }
+
+      .nav{
+          display: block;
       }
 
       header{
@@ -567,6 +610,23 @@ footer{
         top: 0;
         transition: 0.3s;
         cursor: pointer;
+    }
+
+    .nav {
+        position: fixed;
+        top: 2rem;
+        /* left: 0; */
+        right: 0;
+        bottom: 0;
+        /* padding: 1rem; */
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s, visibility .5s;
+    }
+
+    .nav.show {
+        opacity: 1;
+        visibility: visible;
     }
 
 }
